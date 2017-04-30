@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+body{
+    text-align: center;
+    background-color: #000;
+    color: #FFF;
+    } 
+a{color: #FFF;}    
+    
+    
+#myProgress {
+  width: 100%;
+  background-color: #ddd;
+}
+    
+.terminal{
+    width: 400px;
+    height: 250px;    
+    margin:auto;
+    background-color: #000;
+    border-radius:5%;
+    border: 8px solid #999;
+    color: #4CAF50;
+    font-family: monospace;
+}
+    
+
+#myBar {
+  width: 10%;
+  height: 30px;
+  background-color: #4CAF50;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+}
+</style>
+<body onload="move()">
+    
+<a href="hacking_scandal.html">hack</a>
+    
+<br><br><br><br><br><br>
+    
+    
+<div class="terminal">
+<br><br><br><br> 
+<h1>uploading your info</h1>    
+    
+<div id="myProgress">
+  <div id="myBar">10%</div>
+</div>
+    
+<script>
+function move() {
+  var elem = document.getElementById("myBar");   
+  var width = 10;
+  var id = setInterval(frame, 25);
+  function frame() {
+    if (width >= 100) {
+      clearInterval(id);
+    } else {
+      width++; 
+      elem.style.width = width + '%'; 
+      elem.innerHTML = width * 1  + '%';
+    }
+  }
+}
+</script>    
+
+</div><!--END TERMINAL-->
+
+    
+<br><br><br><br><br><br>
+
+<a href="hacking_scandal.html">thanks ;-)</a>
+<br><br>
+
+<a href="hacking_scandal.html"><img src="images/putin.jpg" width="100px"></a>    
+    <br>    
+photo: <a href="hacking_scandal.html">www.kremlin.ru</a>
+
+
+
+</body>
+</html>

@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+/*Use the following for text portions:
+font-family: Times, 'Merriweather', serif;*/
+
+
+/*Use the following google font for headers and headlines:
+font-family: 'Roboto Condensed', sans-serif;*/
+
+.topnav {
+    background-color: #CC3333;
+    overflow: hidden;
+    padding: 14px 16px;
+    text-align: center;
+}
+
+
+/* Style the links inside the navigation bar */
+
+.topnav a {
+    color: #FFF;
+    /*changed link color to white - black too hard to see against red*/
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Merriweather', serif;
+    /*margin: center;*/
+}
+
+
+/* Change the color of links on hover */
+
+.topnav a:hover {
+    background-color: black;
+    /* changed bacground color from: #ddd to white*/
+    color: red;
+}
+
+.topnav a:active {
+    background-color: black;
+    color: white;
+}
+
+
+/* Add a color to the active/current link */
+
+
+/*4/24/17 I removed the 'a' in front of active on line 47 - not necessary*/
+
+.topnav active {
+    background-color: #FFCC00;
+    color: white;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 300%;
+    font-weight: bold;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+h2 {
+    font-size: 250%;
+    font-weight: bold;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+h3 {
+    font-size: 150%;
+    font-weight: bold;
+    padding-left: 15px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+p {
+    font-family: Times, 'Merriweather', serif;
+    text-align: justify;
+    padding: 0px 15px 0px 15px;
+}
+
+
+/*LINK STYLING*/
+
+a {
+    color: black;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
+
+.cvrtop_headline>a {
+    color: #CC0099;
+}
+
+.cvrtop_headline>a:hover {
+    color: #FFF;
+}
+
+.cvrbtm_headline>a {
+    color: #FFCC00;
+}
+
+.cvrbtm_headline>a:hover {
+    color: #FFF;
+}
+
+
+/*COLORS SAMPLED FROM ENQUIRER COVER
+http://www.deviantart.com/art/National-Enquirer-July-15-2013-410683345
+*/
+
+
+/*FONTS*/
+
+.red {
+    color: #CC3333
+}
+
+.yellow {
+    color: #FFCC00
+}
+
+.lightblue {
+    color: #0099CC
+}
+
+.bluegreen {
+    color: #00CCCC
+}
+
+.pink {
+    color: #CC0099
+}
+
+.white {
+    color: #FFF;
+}
+
+
+/*BACKGROUNDS*/
+
+.redbkgnd {
+    background-color: #CC3333
+}
+
+.yellowbkgnd {
+    background-color: #FFCC00
+}
+
+.lightbluebkgnd {
+    background-color: #0099CC
+}
+
+.bluegreenbkgnd {
+    background-color: #25BA28;
+    /*#00CCCC  changed background color to "martian" green*/
+    /* ??? this changed color everywhere on site*/
+}
+
+.pinkbkgnd {
+    background-color: #CC0099
+}
+
+.container {
+    margin: auto;
+    /*text-align: center;*/
+    width: 800px;
+    height: auto;
+}
+
+.tabloid_page {
+    width: auto;
+    /*height: 1000px; 4/24/17 - by commenting this out, there is room on the subscribe page for the submit button to fit.*/
+    /*the point was to have the page dimensions resemble a print tabloid page. that was what we agreed on. */
+    background-color: #F8ECC2;
+    border: 1px solid #D3D3D3;
+    padding: 2px 2px 2px 2px;
+}
+
+.logobox {
+    border: solid 2px;
+    /*karl, I removed the '/' below that was in front of border on line 123*/
+    /* "/" disables that line of CSS - easy to toggle it on off to see changes*/
+    /border-radius: 15px;
+    background-color: #FFF;
+    text-align: center;
+}
+
+.logobox_navbar {
+    border: solid 2px;
+    /*karl, I removed the '/' below that was in front of border on line 131*/
+    /border-radius: 10px;
+    background-color: #FFF;
+    padding: 6px 0px 0px 8px;
+}
+
+.cvrtop_headline {
+    height: auto;
+    text-align: center;
+    padding: 4px;
+    font-size: 250%;
+}
+
+.cvrbtm_headline {
+    clear: both;
+    height: 100px;
+    background-color: #000;
+    padding: 10px;
+    text-align: center;
+    font-size: 150%;
+    color: #FFF;
+}
+
+.article_headline {
+    width: auto;
+    height: auto;
+    font-size: 280%;
+    padding: 3px 3px 3px 15px;
+}
+
+.imgbox_lrg {
+    float: left;
+    width: 72%;
+    height: auto;
+    font-size: 70%;
+    /*FOR CAPTION-ATTRIBUTION*/
+}
+
+.imgbox_med {
+    width: 300px;
+    height: auto;
+    margin-left: 15px;
+    font-size: 70%;
+    /*FOR CAPTION-ATTRIBUTION*/
+}
+
+.text_box_left {
+    float: left;
+    width: 72%;
+    height: 600PX;
+    padding-left: 8px;
+}
+
+.small_box_right {
+    float: right;
+    width: 25%;
+    height: 280px;
+    text-align: center;
+    margin: 10px 0px 5px 0px;
+    padding: 2px 2px 2px 12px;
+    font-size: 130%;
+}
+/* GOT RID OF THESE - INTENT WAS BEFORE NAVBAR ON EVERY PAGE? KARL 4/25
+.btm_box {
+    float: left;
+    width: 30%;
+    height: 150px;
+    text-align: center;
+    margin: 10px 11px 10px 11px;
+    padding: 2px 2px 2px 2px;
+    font-size: 150%;
+}
+*/
+.subscribecontainer {
+    margin: auto;
+    /*text-align: center;*/
+    width: 800px;
+    height: auto;
+}
+
+.footer {
+    padding: 100px 0px 0px 0px;
+    text-align: center;
+    font-family: monospace;
+    font-size: 80%;
+}
+
+.subscribeheader1 {
+    background-color: black;
+    color: #FFF;
+    font-size: 4em;
+    text-align: center;
+}
+
+.subscribeheader2 {
+    background-color: #CC3333;
+    color: #FFF;
+    font-size: 2em;
+    text-align: center;
+}
+
+#create {
+    background-color: #CC3333;
+    border: 3px solid #000000;
+    border-radius: 4px;
+    font-size: 1.15em;
+    color: white;
+    width: 303px;
+    padding: 6px 6px;
+    text-decoration: none;
+    margin: 4px 2px;
+}
+
+input[type=text] {
+    border: 2px solid #CC3333;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+input[type=submit] {
+    background-color: #CC3333;
+    border: 3px solid #000000;
+    border-radius: 4px;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
